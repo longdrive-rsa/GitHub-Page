@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Account Deletion - Long Drive SA</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="logo">Long Drive SA</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy2.html">Privacy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about">
+      <br>
+    <br>
+<h1>Request Account Deletion</h1>
+
+
+  <p>
+    This page allows users of LongDrive to request deletion
+    of their account and associated personal data.
+  </p>
+  <br>
+
+  <h2>How to request deletion</h2>
+  <ol>
+    <li>Enter the email address or phone number associated with your account</li>
+    <li>Submit the request</li>
+    <li>Your account will be deleted within 30 days after verification</li>
+  </ol>
+  <br>
+  <h2>Data deleted</h2>
+  <ul>
+    <li>Username</li>
+    <li>Email address</li>
+    <li>Phone number</li>
+    <li>First name and surname</li>
+    <li>ID number</li>
+  </ul>
+  <br>
+  <h2>Data retained</h2>
+  <p>
+    No personal data is retained after account deletion,
+    except where required by law.
+  </p>
+  <br>
+<h2>Submit request</h2>
+  <br>
+<button id="toggleFormBtn" class="delete-btn">
+  Show Account Deletion form
+</button>
+
+
+
+<div id="formContainer" style="display: none; margin-top: 20px;">
+  <p>
+  Please complete the form below to request deletion of your Long Drive SA account.
+</p>
+<iframe 
+  src="https://docs.google.com/forms/d/e/1FAIpQLSdJdO__918CIvfFS8FX4UmpfIYDw7PnzDxrek7N82FN3-TzVA/viewform?embedded=true" 
+  width="640" 
+  height="650" 
+  frameborder="0" 
+  marginheight="0" 
+  marginwidth="0">
+  Loading…
+
+</iframe>
+
+  <p><small>
+    By submitting this request, you confirm that you are the account holder.
+    Requests are processed within 30 days.
+  </small></p>
+</div>
+
+
+
+  <br>
+    <br>
+  <p>
+    For support, contact <a href="mailto:longdrive.rsa@gmail.com">longdrive.rsa@gmail.com</a>
+  </p>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Long Drive SA</p>
+</footer>
+<script>
+  document.getElementById("toggleFormBtn").addEventListener("click", function () {
+    const container = document.getElementById("formContainer");
+
+    if (container.style.display === "none") {
+      container.style.display = "block";
+      this.textContent = "Hide Account Deletion Form";
+      container.scrollIntoView({ behavior: "smooth" });
+    } else {
+      container.style.display = "none";
+      this.textContent = "Show Account Deletion Form";
+    }
+  });
+</script>
+
+</body>
+</html>
